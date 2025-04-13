@@ -120,7 +120,7 @@ function startInteractiveExperience() {
         'Open Your Gift!'
     ];
     
-    for(let i = 0; i < 5; i++) {
+    for(let i = 0; i < 4; i++) {
         const decoy = document.createElement('button');
         decoy.className = 'annoying-btn';
         decoy.textContent = decoyTexts[i];
