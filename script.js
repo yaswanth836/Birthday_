@@ -19,7 +19,7 @@ const photos = [
         url: 'photos/photo4.png',
         date: "December 2020",
         caption: "Happy 18th Birthday...🤐",
-        heart: "🎄"
+        heart: "😐"
     },
     
     {
@@ -115,7 +115,6 @@ function startInteractiveExperience() {
     
     const decoyTexts = [
         'Click Me Instead!',
-        'No, Click Here!',
         'Real Button Here!',
         'Birthday Surprise!',
         'Open Your Gift!'
@@ -135,7 +134,7 @@ function startInteractiveExperience() {
         });
         
         decoy.addEventListener('click', () => {
-            decoy.textContent = 'Oops! The birthday cake got eaten… by me...😂';
+            decoy.textContent = 'Oops! Cake Not Found 404 Error...😂';
             decoy.style.background = '#ff4757';
             setTimeout(() => {
                 decoy.style.left = `${Math.random() * 70 + 10}%`;
