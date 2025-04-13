@@ -114,13 +114,14 @@ function startInteractiveExperience() {
     document.body.appendChild(realBtn);
     
     const decoyTexts = [
+        'Classic Waffle is here',
         'Click Me Instead!',
         'Real Button Here!',
         'Birthday Surprise!',
         'Open Your Gift!'
     ];
     
-    for(let i = 0; i < 4; i++) {
+    for(let i = 0; i < 5; i++) {
         const decoy = document.createElement('button');
         decoy.className = 'annoying-btn';
         decoy.textContent = decoyTexts[i];
