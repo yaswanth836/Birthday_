@@ -1,43 +1,42 @@
-// Set friend's name (change this)
-const friendName = "Sarah";
+const friendName = "Tabassum";
 document.getElementById('name').textContent = friendName;
 
-// Photo data with captions (replace with your own)
+
 const photos = [
     {
-        url: 'photos/photo1.jpeg',
+        url: 'photos/photo3.png',
         date: "August 2020",
-        caption: "The day we met, my life got 100% funnier. Happy Birthday my friend! 🌟",
-        heart: "🎈"
+        caption: "Happy 30th Birthaday...🤣",
+        heart: "😂"
     },
     {
-        url: 'photos/photo2.jpg',
+        url: 'photos/photo 2.png',
         date: "August 2020",
-        caption: "Cheers to the friend who makes ordinary days extraordinary!",
-        heart: "🎉"
+        caption: "Sry Typo...🙄",
+        heart: "🫠"
     },
     {
-        url: 'photos/photo3.jpg',
+        url: 'photos/photo4.png',
         date: "December 2020",
-        caption: "Proof that we’re adults… but only on paper!",
+        caption: "Happy 18th Birthday...🤐",
         heart: "🎄"
     },
     
     {
-        url: 'photos/photo5.jpg',
+        url: 'photos/photo5.png',
         date: "June 2021",
-        caption: "Squad goals because of YOU.",
-        heart: "🎂"
+        caption: "Sry my bad....🫥",
+        heart: "😬"
     },
     {
-        url: 'photos/photo6.jpg',
+        url: 'photos/photo1.jpeg',
         date: "Today",
-        caption: "Growing older but never growing apart!",
+        caption: "Wishing you 365 days of happiness starting today! Happy 27th 🌟",
         heart: "🎂"
     }
 ];
 
-// Fake loading screen
+
 let progress = 3;
 const loadingInterval = setInterval(() => {
     progress += Math.random() * 7;
@@ -71,7 +70,7 @@ function getRandomLoadingText() {
 }
 
 function startInteractiveExperience() {
-    // Create photo flip cards
+    
     const collage = document.getElementById('photo-collage');
     photos.forEach((photo, index) => {
         const card = document.createElement('div');
@@ -89,12 +88,12 @@ function startInteractiveExperience() {
         collage.appendChild(card);
     });
     
-    // Fade in photo collage
+    
     setTimeout(() => {
         collage.style.opacity = '1';
     }, 500);
     
-    // Create "catch me" button
+    
     const realBtn = document.createElement('button');
     realBtn.className = 'annoying-btn';
     realBtn.textContent = 'Click for Magic! ✨';
@@ -114,7 +113,6 @@ function startInteractiveExperience() {
     
     document.body.appendChild(realBtn);
     
-    // Create decoy buttons
     const decoyTexts = [
         'Click Me Instead!',
         'No, Click Here!',
@@ -137,7 +135,7 @@ function startInteractiveExperience() {
         });
         
         decoy.addEventListener('click', () => {
-            decoy.textContent = 'Oops! The birthday cake got eaten… by me';
+            decoy.textContent = 'Oops! The birthday cake got eaten… by me...😂';
             decoy.style.background = '#ff4757';
             setTimeout(() => {
                 decoy.style.left = `${Math.random() * 70 + 10}%`;
@@ -150,12 +148,11 @@ function startInteractiveExperience() {
         document.body.appendChild(decoy);
     }
     
-    // Final message interaction
-    // Final message interaction - REPLACE THIS SECTION with the following code:
+  
 document.getElementById('cake').addEventListener('click', function() {
-    // Create and show the "cake eaten" message
+    
     const cakeMessage = document.createElement('div');
-    cakeMessage.textContent = "Oops! The birthday cake got eaten… by me";
+    cakeMessage.textContent = "Oops! The birthday cake got eaten… by me..😂";
     cakeMessage.style.position = 'fixed';
     cakeMessage.style.top = '50%';
     cakeMessage.style.left = '50%';
@@ -170,15 +167,14 @@ document.getElementById('cake').addEventListener('click', function() {
     cakeMessage.style.textAlign = 'center';
     cakeMessage.style.animation = 'fadeInOut 2.5s forwards';
     
-    // Add to body
+   
     document.body.appendChild(cakeMessage);
-    
-    // Remove after animation
+ 
     setTimeout(() => {
         cakeMessage.remove();
     }, 2500);
     
-    // Original effects
+   
     document.getElementById('finalMessage').style.transform = 'scale(1)';
     createConfetti(150);
     this.style.animation = 'none';
@@ -188,7 +184,7 @@ document.getElementById('cake').addEventListener('click', function() {
 });
 
 
-    // SoundCloud player control
+    
     document.addEventListener('click', function() {
         const iframe = document.querySelector('iframe');
         if (iframe) {
@@ -231,7 +227,7 @@ function createConfetti(count) {
         confetti.style.height = Math.random() * 15 + 5 + 'px';
         confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
         
-        // Random shapes
+        
         if(Math.random() > 0.7) {
             confetti.style.background = 'transparent';
             confetti.style.border = `3px solid hsl(${Math.random() * 360}, 70%, 60%)`;
@@ -262,7 +258,7 @@ function createHearts(count) {
     }
 }
 
-// Create initial hearts on mouse move
+
 document.addEventListener('mousemove', (e) => {
     if(Math.random() > 0.7) {
         const heart = document.createElement('div');
