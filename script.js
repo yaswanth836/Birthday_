@@ -5,32 +5,32 @@ document.getElementById('name').textContent = friendName;
 const photos = [
     {
         url: 'photos/photo3.png',
-        date: "",
+        date: "J",
         caption: "Happy 30th Birthaday...🤣",
         heart: "😂"
     },
     {
         url: 'photos/photo 2.png',
-        date: "",
+        date: "E",
         caption: "Sry Typo...🙄",
         heart: "🫠"
     },
     {
         url: 'photos/photo4.png',
-        date: "",
+        date: "NN",
         caption: "Happy 18th Birthday...🤐",
         heart: "😐"
     },
     
     {
         url: 'photos/photo5.png',
-        date: "",
+        date: "E",
         caption: "Sry my bad....🫥",
         heart: "😬"
     },
     {
         url: 'photos/photo1.jpeg',
-        date: "Today",
+        date: "Y",
         caption: "Wishing you 365 days of happiness starting today! Happy 27th 🌟",
         heart: "🎂"
     }
