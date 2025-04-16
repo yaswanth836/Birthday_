@@ -5,26 +5,26 @@ document.getElementById('name').textContent = friendName;
 const photos = [
     {
         url: 'photos/photo3.png',
-        date: "August 2020",
+        date: "",
         caption: "Happy 30th Birthaday...🤣",
         heart: "😂"
     },
     {
         url: 'photos/photo 2.png',
-        date: "August 2020",
+        date: "",
         caption: "Sry Typo...🙄",
         heart: "🫠"
     },
     {
         url: 'photos/photo4.png',
-        date: "December 2020",
+        date: "",
         caption: "Happy 18th Birthday...🤐",
         heart: "😐"
     },
     
     {
         url: 'photos/photo5.png',
-        date: "June 2021",
+        date: "",
         caption: "Sry my bad....🫥",
         heart: "😬"
     },
